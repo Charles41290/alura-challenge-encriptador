@@ -1,0 +1,55 @@
+<!---->
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Encriptador</title>
+        <!--
+        <link rel="stylesheet" href="reset.css">  -->
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        <header>
+            <img src="imgs/Logo@2x.png" id="logo" alt="Logo de Alura" >
+        </header>
+
+        <main>
+            <section class="columna-izquierda">
+                <textarea cols="40" rows="6"  placeholder="Inserte texto aquí" class="text-input" onclick="limpiar()" ></textarea>
+                <p class="advertencia-input">&#8252 No se permiten acentos ni caracteres especiales</p>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()" >Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="columna-derecha">
+                <div class="mensaje-vacio" style="display: none ;">
+                    <strong>Ningún mensaje fue encontrado</strong>
+                    <p class="inserte-msg">Ingrese un mensaje</p>
+                </div>
+                <textarea readonly cols="18" rows="8" class="text-output"></textarea>
+                <button class="btn-copiar" onclick="copiar()" style="display: none ;">Copiar</button>
+            </section>
+
+        </main>
+        <footer>
+            <p class="footer-msg"> 	&#169 ONE Challenge-Encriptador de texto. Desarrollado por Carlos R. Romero</p>
+            <nav>
+                <a class="link-linkedin" href="https://www.linkedin.com/in/carlos-r-romero/">
+                    <img src="iconos/icon-linkedin-25.png" class="icon-linkedin" >
+                </a>
+                <a class="link-github" href="https://github.com/Charles41290" >
+                    <img src="iconos/github-icon-25.png" class="icon-github"  >
+                </a>
+                
+            </nav>
+
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
